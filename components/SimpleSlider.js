@@ -1,6 +1,6 @@
-import React from "react";
+'use client';
 import '../assets/scss/_slider.scss';
-
+import Image from 'next/image';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Autoplay } from "swiper";
@@ -33,14 +33,14 @@ export default function SimpleSlider() {
         navigation={true}
         modules={[Autoplay, Navigation]}
       >
-      <SwiperSlide><img src={pic6} alt='' className='slider-img' /></SwiperSlide>
-      <SwiperSlide><img src={pic7} alt='' className='slider-img' /></SwiperSlide>
-      <SwiperSlide><img src={pic1} alt='' className='slider-img' /></SwiperSlide>
-      <SwiperSlide><img src={pic2} alt='' className='slider-img' /></SwiperSlide>
-      <SwiperSlide><img src={pic3} alt='' className='slider-img' /></SwiperSlide>
-      <SwiperSlide><img src={pic4} alt='' className='slider-img' /></SwiperSlide>
-      <SwiperSlide><img src={pic5} alt='' className='slider-img' /></SwiperSlide>
-      <SwiperSlide><img src={pic8} alt='' className='slider-img' /></SwiperSlide>
+      <SwiperSlide><Image src={pic6} alt='' className='slider-img' /></SwiperSlide>
+      <SwiperSlide><Image src={pic7} alt='' className='slider-img' /></SwiperSlide>
+      <SwiperSlide><Image src={pic1} alt='' className='slider-img' /></SwiperSlide>
+      <SwiperSlide><Image src={pic2} alt='' className='slider-img' /></SwiperSlide>
+      <SwiperSlide><Image src={pic3} alt='' className='slider-img' /></SwiperSlide>
+      <SwiperSlide><Image src={pic4} alt='' className='slider-img' /></SwiperSlide>
+      <SwiperSlide><Image src={pic5} alt='' className='slider-img' /></SwiperSlide>
+      <SwiperSlide><Image src={pic8} alt='' className='slider-img' /></SwiperSlide>
     </Swiper>
   );
 }
