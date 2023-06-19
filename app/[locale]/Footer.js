@@ -28,8 +28,8 @@ export default function Footer() {
 							<div>
 								<Image src={logo} alt="" className='footer-logo' />
 								<div className='-icons'>
-									<a href='https://www.facebook.com/profile.php?id=100063543884567' target='_blank' rel="noopener noreferrer"> <img src={facebook} alt="" className='footer-icon' /> </a>
-									<a href='https://www.instagram.com/elizamebeles/' target='_blank' rel="noopener noreferrer"> <img src={instagram} alt="" className='footer-icon' /> </a>
+									<a href='https://www.facebook.com/profile.php?id=100063543884567' target='_blank' rel="noopener noreferrer"> <Image src={facebook} alt="" className='footer-icon' /> </a>
+									<a href='https://www.instagram.com/elizamebeles/' target='_blank' rel="noopener noreferrer"> <Image src={instagram} alt="" className='footer-icon' /> </a>
 									{/* <img src={youtube} alt="" className='footer-icon' /> */}
 								</div>
 							</div>
