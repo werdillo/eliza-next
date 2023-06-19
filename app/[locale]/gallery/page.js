@@ -23,8 +23,8 @@ export default function Gallery() {
 	return (
 		<div className="container-fluid textile">
 			<div className='row'>
-				{images.map((src, index, key) => (
-					<div className='col-6 col-md-4 col-lg-3'>
+				{images.map((src, index) => (
+					<div key={index} className='col-6 col-md-4 col-lg-3'>
 						<div className='gallery-wrapper'>
 							<Image
 								src={src}
