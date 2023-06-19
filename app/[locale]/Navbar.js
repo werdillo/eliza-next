@@ -3,19 +3,30 @@ import { useState } from "react";
 // import { FiMenu, FiX } from 'react-icons/fi';
 import Link from 'next-intl/link';
 import Image from 'next/image';
-import '../assets/scss/layout/_navbar.scss';
-import NavLogo from "../assets/images/Eliza-logo-nav.svg";
+import '@/assets/scss/layout/_navbar.scss';
+import NavLogo from "@/assets/images/Eliza-logo-nav.svg";
 // import DropdownLanguage from './DropdownLanguage';
+import { useRouter } from 'next/navigation';
+import { usePathname } from 'next-intl/client';
 
 const Navbar = (props) => {
+	const pathname = usePathname();
+	const router = useRouter();
+
 	const [open, setOpen] = useState(false);
 	const handleClick = () => setOpen(!open);
 	const closeMenu = () => setOpen(false);
 
+	const [language, setLanguage] = useState(props.lang);
+	const handleLangChange = evt => {
+		router.replace(`/${event.target.value}${pathname}`);
+		setLanguage(evt.target.value)
+	};
+
 	const NavItem = (props) => {
 		return(
 			<li className="-item" onClick={closeMenu}>
-				<Link href={props.link} className={'inactive'} >
+				<Link href={props.link} className={pathname === props.link ? 'current' : 'inactive'} >
 					{props.title}</Link>
 			</li>
 		)
@@ -38,7 +49,19 @@ const Navbar = (props) => {
 				<NavItem link='/gallery' title={props.gallery} />
 				<NavItem link='/about-us' title={props.aboutUs} />
 				<NavItem link='/contacts' title={props.contacts} />
-				{/* <DropdownLanguage /> */}
+
+				<select onChange={handleLangChange} value={language}>
+
+					<option value="lv">
+						LV
+					</option>
+					<option value="en">
+						EN
+					</option>
+					<option value="ru">
+						RU
+					</option>
+				</select>
 			</ul>
 		</nav>
 	);

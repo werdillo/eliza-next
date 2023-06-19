@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 import textile from "@/assets/images/furnitureComponents/textile.png";
 import porolon from "@/assets/images/furnitureComponents/porolon.png";
 
-import Link from 'next-intl/link';
+import Link from 'next/link';
 
 export default function Components() {
 	const t = useTranslations();

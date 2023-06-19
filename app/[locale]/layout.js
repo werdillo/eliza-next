@@ -1,8 +1,8 @@
 import { useLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 
-import Footer from '@/components/Footer';
-import Navbar from '@/components/Navbar';
+import Footer from './Footer';
+import Navbar from './Navbar';
 import '@/assets/scss/layout/_layout.scss';
 
 import { useTranslations } from 'next-intl';
@@ -26,6 +26,7 @@ export default function RootLayout({ children, params }){
         <div id="container">
           <header id="header-content">
             <Navbar 
+              lang={locale}
               collection={t("Navigation.collection")}
               components={t("Navigation.components")}
               horeca={t("Navigation.horeca")}

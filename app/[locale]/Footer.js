@@ -1,23 +1,23 @@
 
 'use client'
 import Image from 'next/image';
-import '../assets/scss/layout/_footer.scss';
+import '@/assets/scss/layout/_footer.scss';
 import 'bootstrap/dist/css/bootstrap.css'
 import { Row, Col, Container } from 'react-bootstrap';
-import logo from "../assets/images/footer/Logo.svg";
+import logo from "@/assets/images/footer/Logo.svg";
 // social media
-import facebook from "../assets/images/footer/facebook-icon.svg";
-import instagram from "../assets/images/footer/instagram-icon.svg";
-// import youtube from "../assets/images/footer/youtube-icon.svg";
-import Special2017 from "../assets/images/footer/Special2017.svg";
-import Winner2018 from "../assets/images/footer/Winner2018.svg";
-import Winner2020 from "../assets/images/footer/Winner2020.svg";
-import InnovationAward from "../assets/images/footer/InnovationAward.svg";
-import IconicAwards2018 from "../assets/images/footer/IconicAwards2018.svg";
-import DesignAwards2016 from "../assets/images/footer/DesignAwards2016.svg";
-import InteriorAwards2015 from "../assets/images/footer/InteriorAwards2015.svg";
-import IfAward2018 from "../assets/images/footer/IfAward2018.svg";
-import IfAward2020 from "../assets/images/footer/IfAward2020.svg";
+import facebook from "@/assets/images/footer/facebook-icon.svg";
+import instagram from "@/assets/images/footer/instagram-icon.svg";
+// import youtube from "@/assets/images/footer/youtube-icon.svg";
+import Special2017 from "@/assets/images/footer/Special2017.svg";
+import Winner2018 from "@/assets/images/footer/Winner2018.svg";
+import Winner2020 from "@/assets/images/footer/Winner2020.svg";
+import InnovationAward from "@/assets/images/footer/InnovationAward.svg";
+import IconicAwards2018 from "@/assets/images/footer/IconicAwards2018.svg";
+import DesignAwards2016 from "@/assets/images/footer/DesignAwards2016.svg";
+import InteriorAwards2015 from "@/assets/images/footer/InteriorAwards2015.svg";
+import IfAward2018 from "@/assets/images/footer/IfAward2018.svg";
+import IfAward2020 from "@/assets/images/footer/IfAward2020.svg";
 
 export default function Footer() {
 	return (
