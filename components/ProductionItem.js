@@ -45,7 +45,7 @@ export default function ProductionItem(props) {
 					navigation={true}
 					modules={[Autoplay, Navigation, Pagination]}
 				>
-					{props.images.map((img) => {
+					{props.images.map((img, key) => {
 						return (<SwiperSlide><img src={img} alt="" className="-slider"></img></SwiperSlide>);
 					})}				
 				</Swiper>
