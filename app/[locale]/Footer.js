@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import '@/assets/scss/layout/_footer.scss';
 import 'bootstrap/dist/css/bootstrap.css'
-import { Row, Col, Container } from 'react-bootstrap';
 import logo from "@/assets/images/footer/Logo.svg";
 // social media
 import facebook from "@/assets/images/footer/facebook-icon.svg";

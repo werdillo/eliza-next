@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
-import '@/assets/scss/_horeca.scss';
+import './horeca.scss';
 
 import hotel from "@/assets/images/hoReCa/Ho.png";
 import Cafe from "@/assets/images/hoReCa/Ca.png";

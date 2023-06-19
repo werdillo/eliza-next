@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet";
 
 import '../assets/scss/_product-item.scss';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Container } from 'react-bootstrap';
 
 // import cleaningFile from "../assets/Files/Products/cleaning.pdf";
 import cleaningEn from "../assets/Files/Products/cleaning-en.pdf";
