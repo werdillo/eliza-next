@@ -1,6 +1,6 @@
-import '../../assets/scss/_catalogs.scss';
+import '@/assets/scss/_catalogs.scss';
 import 'bootstrap/dist/css/bootstrap.css'
-// import { useTranslation } from 'react-i18next';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 import collection_2018 from "@/assets/images/catalog/collection_2018.jpg";
@@ -27,16 +27,16 @@ function Catalog(props) {
 }
 
 export default function Catalogs() {
-	// const { t } = useTranslation();
+	const t = useTranslations();
 	return (
 		<div className='container'>
 			<div className='row'>
 				<div className='col-12'>
-					<p className='catalogs-title'>{("Pages.catalogs.pageTitle")}</p>
+					<p className='catalogs-title'>{t("Pages.catalogs.pageTitle")}</p>
 				</div>
-				<Catalog img={collection_2018} title={("Pages.catalogs.catalog") + " 2018"} />
-				<Catalog img={collection_2019} title={("Pages.catalogs.catalog") + " 2019"} />
-				<Catalog img={collection_2021} title={("Pages.catalogs.catalog") + " 2021"} />
+				<Catalog img={collection_2018} title={t("Pages.catalogs.catalog") + " 2018"} />
+				<Catalog img={collection_2019} title={t("Pages.catalogs.catalog") + " 2019"} />
+				<Catalog img={collection_2021} title={t("Pages.catalogs.catalog") + " 2021"} />
 			</div>
 		</div>
 	);

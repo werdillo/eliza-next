@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { useTranslation } from "react-i18next";
-import cookies from 'js-cookie'
-
+// import React, { useState } from "react";
+// import { useTranslation } from "react-i18next";
+// import cookies from 'js-cookie'
+'use cleint'
 const DropdownLanguage = () => {
 	const { i18n } = useTranslation();
 	const [language, setLanguage] = useState(cookies.get('i18next'));
