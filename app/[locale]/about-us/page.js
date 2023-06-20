@@ -1,7 +1,7 @@
 
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import '@/assets/scss/_about-us.scss';
+import './about-us.scss';
 import Scene1 from "@/assets/images/AboutUs/Scene1.png";
 import Scene2 from "@/assets/images/AboutUs/Scene2.png";
 import Scene3 from "@/assets/images/AboutUs/Scene3.png";

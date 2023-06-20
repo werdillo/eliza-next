@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import '@/assets/scss/_collections.scss';
+import './collections.scss';
 import Link from 'next-intl/link';
 import Pic1 from "@/assets/images/miniSlider/pic1.jpg";
 import Pic2 from "@/assets/images/miniSlider/pic2.jpg";

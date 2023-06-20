@@ -1,4 +1,4 @@
-import '@/assets/scss/_textile.scss';
+import './textile.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 import Image from 'next/image';
 // eco-leather

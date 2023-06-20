@@ -1,4 +1,4 @@
-import '@/assets/scss/_catalogs.scss';
+import './catalogs.scss';
 import 'bootstrap/dist/css/bootstrap.css'
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';

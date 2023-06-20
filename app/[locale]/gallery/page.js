@@ -1,4 +1,4 @@
-import '@/assets/scss/_gallery.scss';
+import './gallery.scss';
 import 'bootstrap/dist/css/bootstrap.css'
 import Image from 'next/image';
 

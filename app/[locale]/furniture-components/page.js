@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import '@/assets/scss/_furniture-components.scss';
+import './furniture-components.scss';
 import 'bootstrap/dist/css/bootstrap.css'
 import { useTranslations } from 'next-intl';
 import textile from "@/assets/images/furnitureComponents/textile.png";

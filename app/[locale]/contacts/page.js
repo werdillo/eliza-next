@@ -1,5 +1,5 @@
 import React from 'react';
-import '@/assets/scss/_contacts.scss';
+import './contacts.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 import { useTranslations } from 'next-intl';
 
