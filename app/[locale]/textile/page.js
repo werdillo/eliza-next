@@ -2,34 +2,34 @@ import './textile.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 import Image from 'next/image';
 // eco-leather
-import Cayenne from "@/assets/images/textile/eco-leather/cayenne.jpeg"
-import Sioux from "@/assets/images/textile/eco-leather/sioux.jpeg"
-import Torres from "@/assets/images/textile/eco-leather/Torres.jpeg"
-import Wave from "@/assets/images/textile/eco-leather/Wave.jpeg"
+import Cayenne from "./img/eco-leather/cayenne.jpeg"
+import Sioux from "./img/eco-leather/sioux.jpeg"
+import Torres from "./img/eco-leather/Torres.jpeg"
+import Wave from "./img/eco-leather/Wave.jpeg"
 
 // leather-imitation
-import bison from "@/assets/images/textile/leather-imitation/bison.jpeg"
-import ranger from "@/assets/images/textile/leather-imitation/ranger.jpeg"
-import salvador from "@/assets/images/textile/leather-imitation/salvador.jpeg"
-import tobago from "@/assets/images/textile/leather-imitation/tobago.jpeg"
+import bison from "./img/leather-imitation/bison.jpeg"
+import ranger from "./img/leather-imitation/ranger.jpeg"
+import salvador from "./img/leather-imitation/salvador.jpeg"
+import tobago from "./img/leather-imitation/tobago.jpeg"
 
-import bloom from "@/assets/images/textile/microfiber/bloom.jpeg"
-import matrix from "@/assets/images/textile/microfiber/matrix.jpeg"
-import suedine from "@/assets/images/textile/microfiber/suedine.jpeg"
-import trend from "@/assets/images/textile/microfiber/trend.jpeg"
+import bloom from "./img/microfiber/bloom.jpeg"
+import matrix from "./img/microfiber/matrix.jpeg"
+import suedine from "./img/microfiber/suedine.jpeg"
+import trend from "./img/microfiber/trend.jpeg"
 
-import falcone from "@/assets/images/textile/structural-fabric/falcone.jpeg"
-import fusion from "@/assets/images/textile/structural-fabric/fusion.jpeg"
-import luna from "@/assets/images/textile/structural-fabric/luna.jpeg"
-import Magnum from "@/assets/images/textile/structural-fabric/Magnum.jpeg"
+import falcone from "./img/structural-fabric/falcone.jpeg"
+import fusion from "./img/structural-fabric/fusion.jpeg"
+import luna from "./img/structural-fabric/luna.jpeg"
+import Magnum from "./img/structural-fabric/Magnum.jpeg"
 
-import amore from "@/assets/images/textile/velour/amore.jpeg"
-import gordon from "@/assets/images/textile/velour/gordon.jpeg"
-import Tiffany from "@/assets/images/textile/velour/Tiffany.jpeg"
-import vogue from "@/assets/images/textile/velour/vogue.jpeg"
+import amore from "./img/velour/amore.jpeg"
+import gordon from "./img/velour/gordon.jpeg"
+import Tiffany from "./img/velour/Tiffany.jpeg"
+import vogue from "./img/velour/vogue.jpeg"
 
 // flock
-import Pia from "@/assets/images/textile/flock/pia.jpeg"
+import Pia from "./img/flock/pia.jpeg"
 
 function TextileItem(props) {
 	return (

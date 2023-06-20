@@ -4,21 +4,21 @@ import Image from 'next/image';
 
 export default function Gallery() {
 	const images = [
-		require("../../../assets/images/gallery/img1.png"),
-		require("../../../assets/images/gallery/img2.png"),
-		require("../../../assets/images/gallery/img3.png"),
-		require("../../../assets/images/gallery/img4.png"),
-		require("../../../assets/images/gallery/img5.png"),
-		require("../../../assets/images/gallery/img6.png"),
-		require("../../../assets/images/gallery/img7.png"),
-		require("../../../assets/images/gallery/img8.png"),
-		require("../../../assets/images/gallery/img9.png"),
-		require("../../../assets/images/gallery/img10.png"),
-		require("../../../assets/images/gallery/img11.png"),
-		require("../../../assets/images/gallery/img12.png"),
-		require("../../../assets/images/gallery/img13.png"),
-		require("../../../assets/images/gallery/img14.png"),
-		require("../../../assets/images/gallery/img15.png"),
+		require("./img/img1.png"),
+		require("./img/img2.png"),
+		require("./img/img3.png"),
+		require("./img/img4.png"),
+		require("./img/img5.png"),
+		require("./img/img6.png"),
+		require("./img/img7.png"),
+		require("./img/img8.png"),
+		require("./img/img9.png"),
+		require("./img/img10.png"),
+		require("./img/img11.png"),
+		require("./img/img12.png"),
+		require("./img/img13.png"),
+		require("./img/img14.png"),
+		require("./img/img15.png"),
 	];
 	return (
 		<div className="container-fluid textile">

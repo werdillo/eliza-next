@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import './collections.scss';
 import Link from 'next-intl/link';
-import Pic1 from "@/assets/images/miniSlider/pic1.jpg";
-import Pic2 from "@/assets/images/miniSlider/pic2.jpg";
-import Pic3 from "@/assets/images/miniSlider/pic3.jpg";
+import Pic1 from "./img/pic1.jpg";
+import Pic2 from "./img/pic2.jpg";
+import Pic3 from "./img/pic3.jpg";
 
 export default function Collections() {
 	return (

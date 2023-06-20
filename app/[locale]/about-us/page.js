@@ -2,9 +2,9 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import './about-us.scss';
-import Scene1 from "@/assets/images/AboutUs/Scene1.png";
-import Scene2 from "@/assets/images/AboutUs/Scene2.png";
-import Scene3 from "@/assets/images/AboutUs/Scene3.png";
+import Scene1 from "./img/Scene1.png";
+import Scene2 from "./img/Scene2.png";
+import Scene3 from "./img/Scene3.png";
 
 
 export default function AboutUs() {

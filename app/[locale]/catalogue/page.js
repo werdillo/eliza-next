@@ -3,9 +3,9 @@ import 'bootstrap/dist/css/bootstrap.css'
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
-import collection_2018 from "@/assets/images/catalog/collection_2018.jpg";
-import collection_2019 from "@/assets/images/catalog/collection_2019.jpg";
-import collection_2021 from "@/assets/images/catalog/collection_2021.jpg";
+import collection_2018 from "./img/collection_2018.jpg";
+import collection_2019 from "./img/collection_2019.jpg";
+import collection_2021 from "./img/collection_2021.jpg";
 // pdf files
 // import catalog_2018 from "../../assets/Files/Catalogs/catalog_2018.pdf";
 // import catalog_2019 from "../../assets/Files/Catalogs/catalog_2019.pdf";

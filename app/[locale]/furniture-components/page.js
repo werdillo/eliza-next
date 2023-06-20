@@ -2,8 +2,8 @@ import Image from 'next/image'
 import './furniture-components.scss';
 import 'bootstrap/dist/css/bootstrap.css'
 import { useTranslations } from 'next-intl';
-import textile from "@/assets/images/furnitureComponents/textile.png";
-import porolon from "@/assets/images/furnitureComponents/porolon.png";
+import textile from "./img/textile.png";
+import porolon from "./img/porolon.png";
 
 import Link from 'next/link';
 

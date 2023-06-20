@@ -1,11 +1,9 @@
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
-
+import hotel from "./img/Ho.png";
+import Cafe from "./img/Ca.png";
+import restaraunt from "./img/Re.png";
 import './horeca.scss';
-
-import hotel from "@/assets/images/hoReCa/Ho.png";
-import Cafe from "@/assets/images/hoReCa/Ca.png";
-import restaraunt from "@/assets/images/hoReCa/Re.png";
+import { useTranslations } from 'next-intl';
 
 function HorecaItem(props) {
 	return (
