@@ -2,7 +2,7 @@ import Image from 'next/image';
 import hotel from "./img/Ho.png";
 import Cafe from "./img/Ca.png";
 import restaraunt from "./img/Re.png";
-import './horeca.scss';
+import './horeca.scss'; 
 import { useTranslations } from 'next-intl';
 
 function HorecaItem(props) {

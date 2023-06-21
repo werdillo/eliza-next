@@ -1,0 +1,35 @@
+.swiper-button-next:after {
+	color: #b4b4b4;
+}
+
+.swiper-button-prev:after {
+	color: #b4b4b4;
+}
+
+.slider-img {
+	width: 100%;
+	height: calc(100vh - 180px);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	object-fit: cover;
+	@media screen and (max-width: 768px) {
+		width: 100%;
+		height: calc(75vh - 180px);
+		top: 0;
+		bottom: 0;
+		left: 0;
+		object-fit: cover;
+		filter: grayscale(.1);
+	}
+}
+
+.slider-mini {
+	height: 360px;
+	.-item {
+		height: 100%;
+	}
+}
+
+
+
