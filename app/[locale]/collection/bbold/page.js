@@ -4,6 +4,7 @@ import ProdcuctLanding from '@/components/ProductLanding'
 import 'bootstrap/dist/css/bootstrap.css'
 import '@/assets/scss/_collection.scss';
 import { useTranslations } from 'next-intl';
+import Link from 'next-intl/link';
 
 export default function page() {
   const t = useTranslations();
@@ -16,7 +17,9 @@ export default function page() {
         </div>
         {BboldSofas.map((item, key) =>
           <div key={key} className='col-sm-12 col-md-6 col-lg-3'>
-            <ProdcuctLanding text={item.title} img={item.photo[0]} />
+            <Link href={"/collection/bbold/" + item.path} className='-link'>
+              <ProdcuctLanding text={item.title} img={item.photo[0]} />
+            </Link>
           </div>
         )}
       </div>
