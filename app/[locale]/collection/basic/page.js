@@ -4,14 +4,16 @@ import BasicSofas from '@/json/basic/BasicSofas'
 import ProdcuctLanding from '@/components/ProductLanding'
 import 'bootstrap/dist/css/bootstrap.css'
 import '@/assets/scss/_collection.scss';
+import { useTranslations } from 'next-intl';
 
-export default async function page() {
+export default function page() {
+  const t = useTranslations();
   return (
     
     <div className='container-fluid'>
       <div className='row'>
         <div className='col-lg-12'>
-          <p className='product-type-title'>Sofas</p>
+          <p className='product-type-title'>{t("Pages.collection.sofas")}</p>
         </div>
 
         {BasicSofas.map((item, key) =>
@@ -22,7 +24,7 @@ export default async function page() {
       </div>
       <div className='row'>
         <div className='col-lg-12'>
-          <p className='product-type-title'>Matresses</p>
+          <p className='product-type-title'>{t("Pages.collection.mattresses")}</p>
         </div>  
 
         {BasicMattresses.map((item, key) =>
