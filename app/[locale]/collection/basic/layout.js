@@ -2,7 +2,7 @@ import Link from 'next-intl/link';
 import '@/assets/scss/_collection.scss';
 import { useTranslations } from 'next-intl';
 
-export default function layout({ children }) {
+export default function Layout({ children }) {
 	const t = useTranslations();
   return (
 	  <>

@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 // import cleaningMattressesEn from "../assets/Files/Products/cleaning-mattresses-en.pdf";
 // import cleaningMattressesRu from "../assets/Files/Products/cleaning-mattresses-ru.pdf";
 // import cleaningMattressesLv from "../assets/Files/Products/cleaning-mattresses-lv.pdf";
-
+import Image from 'next/image';
 // swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, Pagination } from "swiper";
@@ -39,11 +39,11 @@ export default function ProductionItem(props) {
 					modules={[Autoplay, Navigation, Pagination]}
 				>
 					{props.images.map((img, key) => {
-						return (<SwiperSlide><img key={key} src={img} alt="" className="-slider"></img></SwiperSlide>);
+						return (<SwiperSlide key={key}><img  src={img} alt="" className="-slider" /></SwiperSlide>);
 					})}				
 				</Swiper>
 				:
-				<img src={props.images[0]} alt="" className="-slider"></img>
+				<img src={props.images[0]} alt="" className="-slider" />
 			}
 			
 			<div className='container'>

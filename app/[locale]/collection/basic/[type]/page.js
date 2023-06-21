@@ -7,7 +7,7 @@ import '@/assets/scss/_collection.scss';
 import { useTranslations } from 'next-intl';
 import Link from 'next-intl/link';
 
-export default function page({ params }) {
+export default function BasicProductsFiltered({ params }) {
   const t = useTranslations();
   return (
     

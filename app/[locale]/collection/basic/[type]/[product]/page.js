@@ -8,7 +8,7 @@ const findObjectByPath = (array, path) => {
 	return result ? result : "pass";
 };
 
-export default function page({ params }) {
+export default function BasicProduct({ params }) {
 	const path = params.type + "/" + params.product; 
 	const item = findObjectByPath([...BasicSofas, ...BasicMattresses], path);
   return  item !== 'pass' ?
