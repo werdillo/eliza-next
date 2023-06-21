@@ -6,7 +6,7 @@ export default function layout({ children }) {
 	  <>
 		<div className="sticky">
 			<div className='filter'>
-				<Link href='/collection/bbold/sofa' className='-link'>
+				<Link href='/collection/bbold' className='-link'>
 					  Sofas
 				</Link>
 			</div>
