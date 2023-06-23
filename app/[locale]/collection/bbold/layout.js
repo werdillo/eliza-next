@@ -6,7 +6,7 @@ export default function Layout({ children }) {
 	const filter = [
 		{
 			link: "/collection/bbold",
-			text: t("Pages.collection.all")
+			text: t("Pages.collection.sofas")
 		}
 	]
 	return (
