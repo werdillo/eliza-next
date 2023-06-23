@@ -22,9 +22,6 @@ export default function RootLayout({ children, params }){
   }
   return (
     <html lang={locale}>
-      <head>
-        <link rel='icon' href='/favicon.ico' />
-      </head>
       <body>
         <div id="container">
           <header id="header-content">
