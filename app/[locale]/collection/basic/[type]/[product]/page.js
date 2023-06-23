@@ -13,15 +13,15 @@ export default function BasicProduct({ params }) {
 	const path = params.type + "/" + params.product; 
 	const item = findObjectByPath([...BasicSofas, ...BasicMattresses], path);
 	const t = useTranslations();
-  return  item !== 'pass' ?
-	  <ProductionItem
-		  title={item.title}
-		  images={item.photo}
-		  file={item.file}
-		  file_local={item.file_local}
-		  type={params.type}
-		  local={t("local")}
-		  specification={t("components.product-item.specification")}
-		  cleaning={t("components.product-item.cleaning")} />
-	  : <div>error</div>
+	return  item !== 'pass' ?
+		<ProductionItem
+			title={item.title}
+			images={item.photo}
+			file={item.file}
+			file_local={item.file_local}
+			type={params.type}
+			local={t("local")}
+			specification={t("components.product-item.specification")}
+			cleaning={t("components.product-item.cleaning")} />
+		: <div>error</div>
 }

@@ -1,24 +1,25 @@
-import Link from 'next-intl/link';
-import '@/assets/scss/_collection.scss';
 import { useTranslations } from 'next-intl';
+import CollectionFilter from '@/components/CollectionFilter';
 
 export default function Layout({ children }) {
 	const t = useTranslations();
+	const filter = [
+		{
+			link: "/collection/basic",
+			text: t("Pages.collection.all")
+		},
+		{
+			link: "/collection/basic/matresses",
+			text: t("Pages.collection.mattresses")
+		},
+		{
+			link: "/collection/basic/sofa",
+			text: t("Pages.collection.sofas")
+		},
+	]
   return (
 	  <>
-		<div className="sticky">
-			<div className='filter'>
-				<Link href='/collection/basic' className='-link'>
-					  {t("Pages.collection.all")}
-				</Link>
-				<Link href='/collection/basic/matresses' className='-link'>
-					  {t("Pages.collection.mattresses")}
-				</Link>
-				<Link href='/collection/basic/sofa' className='-link'>
-					  {t("Pages.collection.sofas")}
-				</Link>
-			</div>
-		</div>
+		<CollectionFilter data={filter}/>
 		{ children }
 	  </>
   )

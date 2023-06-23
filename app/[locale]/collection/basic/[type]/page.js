@@ -47,8 +47,6 @@ export default function BasicProductsFiltered({ params }) {
           </>
         }
       </div>
-      
-      {/* <img src={BasicMattresses[0].photo[0]} alt=''/> */}
     </div>
   )
 }

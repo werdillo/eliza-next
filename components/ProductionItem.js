@@ -1,7 +1,6 @@
 "use client"
-import '../assets/scss/_product-item.scss';
+import '@/assets/scss/_product-item.scss';
 import 'bootstrap/dist/css/bootstrap.css';
-
 
 // swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -10,10 +9,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-
-
 export default function ProductionItem(props) {
-	const cleaningFile = "/assets/Files/Products/cleaning.pdf";
+	// const cleaningFile = "/assets/Files/Products/cleaning.pdf";
 	const cleaningEn = "/assets/Files/Products/cleaning-en.pdf";
 	const cleaningRu = "/assets/Files/Products/cleaning-ru.pdf";
 	const cleaningLv = "/assets/Files/Products/cleaning-lv.pdf";
@@ -49,14 +46,12 @@ export default function ProductionItem(props) {
 				<p className='-text xl'>{props.title}</p>
 				<p className='-text'>{props.description}</p>
 				<div className='-links-wrapper'>
-					
 					{props.file ?
 						<a href={props.file} target='_blank' rel='noopener noreferrer'>
 							{/* <div className='-link'>{t("components.product-item.specification")}</div> */}
 							<div className='-link'>{props.specification}</div>
 						</a>
 					 : null}
-
 					{props.file_local ?
 						<>
 							{props.local === "en" &&
@@ -74,42 +69,36 @@ export default function ProductionItem(props) {
 						</>
 					: null}
 					{props.type === "mattresses" ?
-					<>
-						{props.local === "en" &&
-							<a href={cleaningMattressesEn} target='_blank' rel='noopener noreferrer'>
-								<div className='-link'>{props.cleaning}</div>
-							</a>
-						}
-						{props.local === "lv" &&
-							<a href={cleaningMattressesLv} target='_blank' rel='noopener noreferrer'>
-								<div className='-link'>{props.cleaning}</div>
-							</a>
-						}
-						{props.local === "ru" &&
-							<a href={cleaningMattressesRu} target='_blank' rel='noopener noreferrer'>
-								<div className='-link'>{props.cleaning}</div>
-							</a>
-						}
-					</>
-					:
-					<>
-						{props.local === "en" &&
-							<a href={cleaningEn} target='_blank' rel='noopener noreferrer'>
-								<div className='-link'>{props.cleaning}</div>
-							</a>
-						}
-						{props.local === "lv" &&
-							<a href={cleaningLv} target='_blank' rel='noopener noreferrer'>
-								<div className='-link'>{props.cleaning}</div>
-							</a>
-						}
-						{props.local === "ru" &&
-							<a href={cleaningRu} target='_blank' rel='noopener noreferrer'>
-								<div className='-link'>{props.cleaning}</div>
-							</a>
-						}
-					</>								
-				}
+						<>
+							{props.local === "en" &&
+								<a href={cleaningMattressesEn} target='_blank' rel='noopener noreferrer'>
+									<div className='-link'>{props.cleaning}</div>
+								</a>}
+							{props.local === "lv" &&
+								<a href={cleaningMattressesLv} target='_blank' rel='noopener noreferrer'>
+									<div className='-link'>{props.cleaning}</div>
+								</a>}
+							{props.local === "ru" &&
+								<a href={cleaningMattressesRu} target='_blank' rel='noopener noreferrer'>
+									<div className='-link'>{props.cleaning}</div>
+								</a>}
+						</>
+						:
+						<>
+							{props.local === "en" &&
+								<a href={cleaningEn} target='_blank' rel='noopener noreferrer'>
+									<div className='-link'>{props.cleaning}</div>
+								</a>}
+							{props.local === "lv" &&
+								<a href={cleaningLv} target='_blank' rel='noopener noreferrer'>
+									<div className='-link'>{props.cleaning}</div>
+								</a>}
+							{props.local === "ru" &&
+								<a href={cleaningRu} target='_blank' rel='noopener noreferrer'>
+									<div className='-link'>{props.cleaning}</div>
+								</a>}
+						</>								
+					}
 				</div>
 			</div>
 		</div>

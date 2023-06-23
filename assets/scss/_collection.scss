@@ -22,9 +22,7 @@
 	gap: 60px;
 	justify-content: left;
 	flex-wrap: wrap;
-	@media screen and (max-width: 768px) {
-		gap: 30px;
-	}
+	@media screen and (max-width: 768px) {gap: 30px;}
 	.-link {
 		color: #fff;
 		display: block;

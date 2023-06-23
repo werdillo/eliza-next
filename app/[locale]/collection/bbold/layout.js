@@ -1,19 +1,19 @@
-import Link from 'next-intl/link';
-import '@/assets/scss/_collection.scss';
 import { useTranslations } from 'next-intl';
+import CollectionFilter from '@/components/CollectionFilter';
 
 export default function Layout({ children }) {
 	const t = useTranslations();
-  return (
-	  <>
-		<div className="sticky">
-			<div className='filter'>
-				<Link href='/collection/bbold' className='-link'>
-					  {t("Pages.collection.sofas")}
-				</Link>
-			</div>
-		</div>
-		{ children }
-	  </>
-  )
+	const filter = [
+		{
+			link: "/collection/bbold",
+			text: t("Pages.collection.all")
+		}
+	]
+	return (
+		<>
+			<CollectionFilter data={filter} />
+			{children}
+		</>
+	)
 }
+
