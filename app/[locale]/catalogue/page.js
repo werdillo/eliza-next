@@ -10,7 +10,7 @@ import collection_2021 from "./img/collection_2021.jpg";
 function Catalog(props) {
 	// redirect('/assets/Files/Catalogs/catalog_2018.pdf')
 	return (
-		<div className='col col-sm-12 col-lg-4'>
+		<div className='col-sm-12 col-lg-4'>
 			<div className='catalog'>
 				<a href={props.link} className="-link" target='_blank' rel='noopener noreferrer'>
 					<div className='-link'>

@@ -20,6 +20,37 @@ export default function RootLayout({ children, params }){
   if (params.locale !== locale) {
     notFound();
   }
+
+  const navItems = [
+    {
+      title: t("Navigation.collection"),
+      path: "/collection"
+    },
+    {
+      title: t("Navigation.components"),
+      path: "/furniture-components"
+    },
+    {
+      title: t("Navigation.horeca"),
+      path: "/horeca"
+    },
+    {
+      title: t("Navigation.catalogs"),
+      path: "/catalogue"
+    },
+    {
+      title: t("Navigation.gallery"),
+      path: "/gallery"
+    },
+    {
+      title: t("Navigation.about-us"),
+      path: "/about-us"
+    },
+    {
+      title: t("Navigation.contacts"),
+      path: "/contacts"
+    },
+  ]
   return (
     <html lang={locale}>
       <body>
@@ -27,13 +58,7 @@ export default function RootLayout({ children, params }){
           <header id="header-content">
             <Navbar 
               lang={locale}
-              collection={t("Navigation.collection")}
-              components={t("Navigation.components")}
-              horeca={t("Navigation.horeca")}
-              catalogue={t("Navigation.catalogs")}
-              gallery={t("Navigation.gallery")}
-              aboutUs={t("Navigation.about-us")}
-              contacts={t("Navigation.contacts")}
+              data={navItems}
              />
           </header>
           <main id="main-content">

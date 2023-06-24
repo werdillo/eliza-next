@@ -1,13 +1,11 @@
 "use client";
 import { useState } from "react";
-// import { FiMenu, FiX } from 'react-icons/fi';
 import Link from 'next-intl/link';
 import Image from 'next/image';
 import '@/assets/scss/layout/_navbar.scss';
 import NavLogo from "@/assets/images/Eliza-logo-nav.svg";
 import Burger from "@/assets/images/burger.svg";
 import Close from "@/assets/images/close.svg";
-// import DropdownLanguage from './DropdownLanguage';
 import { useRouter } from 'next/navigation';
 import { usePathname } from 'next-intl/client';
 
@@ -43,16 +41,8 @@ const Navbar = (props) => {
 				{open ? <Image src={Close} alt="" /> : <Image src={Burger} alt="" />}
 			</div>
 			<ul className={open ? '-links active' : '-links'}>
-				<NavItem link='/collection' title={props.collection} />
-				<NavItem link='/furniture-components' title={props.components} />
-				<NavItem link='/horeca' title={props.horeca} />
-				<NavItem link='/catalogue' title={props.catalogue} />
-				<NavItem link='/gallery' title={props.gallery} />
-				<NavItem link='/about-us' title={props.aboutUs} />
-				<NavItem link='/contacts' title={props.contacts} />
-
+				{props.data.map(item => <NavItem link={item.path} title={item.title} />)}
 				<select onChange={handleLangChange} value={language}>
-
 					<option value="lv">
 						LV
 					</option>

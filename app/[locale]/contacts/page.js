@@ -11,7 +11,7 @@ export default function Contacts() {
 				<div className='col-12'>
 					<p className='contacts-title'>{t("Pages.contacts.pageTitle")}</p>
 				</div>
-				<div className='col col-sm-12 col-lg-4'>
+				<div className='col-sm-12 col-lg-4'>
 					<div className='contacts-wrapper'>
 						<p className='-text xl special'>{t("Pages.contacts.salon")}</p>
 						<p className='-text'>Rīga, А. Deglava iela 50, LV-1035</p>
@@ -23,7 +23,7 @@ export default function Contacts() {
 						<p className='-text'>{t("Pages.contacts.sun")}</p>
 					</div>
 				</div>
-				<div className='col col-sm-12 col-lg-4'>
+				<div className='col-sm-12 col-lg-4'>
 					<div className='contacts-wrapper'>
 						<p className='-text xl special'>{t("Pages.contacts.porolon")}</p>
 						<p className='-text'>Rīga, A. Deglava iela 52A,</p>
@@ -35,7 +35,7 @@ export default function Contacts() {
 						<p className='-text'>{t("Pages.contacts.closed-days-porolon")}</p>
 					</div>
 				</div>
-				<div className='col col-sm-12 col-lg-4'>
+				<div className='col-sm-12 col-lg-4'>
 					<div className='contacts-wrapper'>
 						<p className='-text xl special'>{t("Pages.contacts.textile")}</p>
 						<p className='-text'>Rīga, A. Deglava 50 iela K-1</p>
