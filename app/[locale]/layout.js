@@ -22,34 +22,13 @@ export default function RootLayout({ children, params }){
   }
 
   const navItems = [
-    {
-      title: t("Navigation.collection"),
-      path: "/collection"
-    },
-    {
-      title: t("Navigation.components"),
-      path: "/furniture-components"
-    },
-    {
-      title: t("Navigation.horeca"),
-      path: "/horeca"
-    },
-    {
-      title: t("Navigation.catalogs"),
-      path: "/catalogue"
-    },
-    {
-      title: t("Navigation.gallery"),
-      path: "/gallery"
-    },
-    {
-      title: t("Navigation.about-us"),
-      path: "/about-us"
-    },
-    {
-      title: t("Navigation.contacts"),
-      path: "/contacts"
-    },
+    {title: t("Navigation.collection"),path: "/collection"},
+    {title: t("Navigation.components"), path: "/furniture-components"},
+    {title: t("Navigation.horeca"), path: "/horeca"},
+    {title: t("Navigation.catalogs"),path: "/catalogue"},
+    {title: t("Navigation.gallery"), path: "/gallery"},
+    {title: t("Navigation.about-us"), path: "/about-us"},
+    {title: t("Navigation.contacts"), path: "/contacts"},
   ]
   return (
     <html lang={locale}>

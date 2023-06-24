@@ -41,7 +41,7 @@ const Navbar = (props) => {
 				{open ? <Image src={Close} alt="" /> : <Image src={Burger} alt="" />}
 			</div>
 			<ul className={open ? '-links active' : '-links'}>
-				{props.data.map(item => <NavItem link={item.path} title={item.title} />)}
+				{props.data.map((item, key) => <NavItem key={key} link={item.path} title={item.title} />)}
 				<select onChange={handleLangChange} value={language}>
 					<option value="lv">
 						LV
