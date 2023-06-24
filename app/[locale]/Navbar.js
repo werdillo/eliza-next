@@ -5,6 +5,8 @@ import Link from 'next-intl/link';
 import Image from 'next/image';
 import '@/assets/scss/layout/_navbar.scss';
 import NavLogo from "@/assets/images/Eliza-logo-nav.svg";
+import Burger from "@/assets/images/burger.svg";
+import Close from "@/assets/images/close.svg";
 // import DropdownLanguage from './DropdownLanguage';
 import { useRouter } from 'next/navigation';
 import { usePathname } from 'next-intl/client';
@@ -37,9 +39,8 @@ const Navbar = (props) => {
 			<Link href="/" className="-logo" >
 				<Image src={NavLogo} alt="" className='' />
 			</Link>
-			<div onClick={handleClick} className="-icon">
-				{/* {open ? <FiX /> : <FiMenu />} */}
-				{open ? <div>X</div> : <div>Y</div>}
+			<div onClick={handleClick} className='-icon'>
+				{open ? <Image src={Close} alt="" /> : <Image src={Burger} alt="" />}
 			</div>
 			<ul className={open ? '-links active' : '-links'}>
 				<NavItem link='/collection' title={props.collection} />
