@@ -4,7 +4,14 @@ import Cafe from "./img/Ca.png";
 import restaraunt from "./img/Re.png";
 import './horeca.scss'; 
 import { useTranslations } from 'next-intl';
-import Head from 'next/head'
+
+
+
+export const metadata = {
+	title: 'Horeca',
+	description: 'Eliza-k horeca',
+	keywords: ['Eliza-k', 'eliza', 'horeca', 'restaurants', 'cafe', 'hotels'],
+}
 
 function HorecaItem(props) {
 	return (
@@ -22,11 +29,6 @@ export default function Horeca() {
 	const t = useTranslations();
 	return (
 		<>
-			<Head>
-				<title>Horeca</title>
-				<meta name="description" content="horeca" />
-				<meta property="og:title" content="Horeca" key="title" />
-			</Head>
 			<HorecaItem header={t("Pages.horeca.hotel-title")} img={hotel} text={t("Pages.horeca.hotel-text")} />
 			<HorecaItem header={t("Pages.horeca.restaurant-title")} img={restaraunt} text={t("Pages.horeca.restaurant-text")} />
 			<HorecaItem header={t("Pages.horeca.cafe-title")} img={Cafe} text={t("Pages.horeca.cafe-text")} />

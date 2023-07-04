@@ -4,19 +4,17 @@ import 'bootstrap/dist/css/bootstrap.css'
 import { useTranslations } from 'next-intl';
 import textile from "./img/textile.png";
 import porolon from "./img/porolon.png";
-import Head from 'next/head'
 import Link from 'next/link';
 
+export const metadata = {
+	title: 'Components',
+	description: 'Eliza-k furniture components',
+	keywords: ['Eliza-k', 'eliza', 'furniture', 'components', 'furniture components'],
+}
 export default function Components() {
 	const t = useTranslations();
 	return (
 		<div className="container-fluid furniture-components">
-			<Head>
-				<title>Furniture components</title>
-				<meta name="description" content="Eliza-k components" />
-				<meta name="keywords" content="eliza, eliza-k, furniture, components" />
-				<meta property="og:title" content="Furniture components" key="title" />
-			</Head>
 			<div className='row'>
 				<div className='col-12 col-lg-6'>
 					<a href="http://porolons.lv/" target="_blank" rel="noopener noreferrer">

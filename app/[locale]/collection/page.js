@@ -1,20 +1,18 @@
 import Image from 'next/image';
 import './collections.scss';
-import Head from 'next/head'
 import Link from 'next-intl/link';
 import Pic1 from "./img/pic1.jpg";
 import Pic2 from "./img/pic2.jpg";
 import Pic3 from "./img/pic3.jpg";
 
+export const metadata = {
+	title: 'Collections',
+	description: 'Eliza collections',
+	keywords: ['Eliza-k', 'eliza', 'collections', 'bbold', 'basic'],
+}
 export default function Collections() {
 	return (
 		<div className='collections'>
-			<Head>
-				<title>Collections</title>
-				<meta name="description" content="Eliza collections" />
-				<meta name="keywords" content="Eliza-k, eliza, collections" />
-				<meta property="og:title" content="Collections" key="title" />
-			</Head>
 			<a href="https://www.sophisticated-living.com/" rel="noopener noreferrer" target="_blank">
 				<div className='-item'>
 					<Image className='-img' placeholder="blur" alt='' src={Pic2} />

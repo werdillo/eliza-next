@@ -10,6 +10,9 @@ import { useTranslations } from 'next-intl';
 export const metadata = {
   title: 'Eliza premium furniture',
   description: 'Eliza premium furniture',
+  icons: {
+    icon: '../favicon.ico',
+  },
 }
 
 export default function RootLayout({ children, params }){

@@ -1,23 +1,22 @@
 
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import Head from 'next/head'
 import './about-us.scss';
 import Scene1 from "./img/Scene1.png";
 import Scene2 from "./img/Scene2.png";
 import Scene3 from "./img/Scene3.png";
 
 
+export const metadata = {
+	title: 'About us',
+	description: 'About Eliza',
+	keywords: ['Eliza-k', 'eliza', 'about us'],
+}
+
 export default function AboutUs() {
 	const t = useTranslations();
 	return (
 		<div className='about-us'>
-			<Head>
-				<title>About us</title>
-				<meta name="description" content="Eliza-k about-us" />
-				<meta name="keywords" content="Eliza-k, eliza, about-us" />
-				<meta property="og:title" content="about us" key="title" />
-			</Head>
 			<div className='-player'>
 				<iframe
 					className='-item'

@@ -42,6 +42,12 @@ function TextileItem(props) {
 	)
 }
 
+export const metadata = {
+	title: 'Textile',
+	description: 'Eliza textile',
+	keywords: ['Eliza-k', 'eliza', 'textile'],
+}
+
 export default function Textile() {
 
 	return (

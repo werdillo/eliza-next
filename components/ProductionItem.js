@@ -8,7 +8,6 @@ import { Navigation, Autoplay, Pagination } from "swiper";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import Head from 'next/head'
 
 export default function ProductionItem(props) {
 	// const cleaningFile = "/assets/Files/Products/cleaning.pdf";
@@ -20,12 +19,6 @@ export default function ProductionItem(props) {
 	const cleaningMattressesLv = "/assets/Files/Products/cleaning-mattresses-lv.pdf";
 	return (
 		<div className='product-item'>
-			<Head>
-				<title>{props.title}</title>
-				<meta name="description" content={"Eliza-k" +props.title} />
-				<meta name="keywords" content={"Eliza-k, eliza, " + props.title} />
-				<meta property="og:title" content={props.title} key="title" />
-			</Head>
 			{(props.images.length > 1) ?
 				<Swiper
 					loop={true}

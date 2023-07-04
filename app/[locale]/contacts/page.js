@@ -2,21 +2,20 @@ import React from 'react';
 import './contacts.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 import { useTranslations } from 'next-intl';
-import Head from 'next/head'
+
+export const metadata = {
+	title: 'Contacts',
+	description: 'Eliza-k contacts',
+	description: 'Working days: 11:00 - 18:00"',
+	description: 'saturday - 11:00 - 15:00"',
+	keywords: ['Eliza-k', 'eliza', 'contacts', 'working time', 'adress'],
+}
 
 export default function Contacts() {
 	const t = useTranslations();
 	return (
 		 <div className='container'>
-			<Head>
-				<title>Contacts</title>
-				<meta name="description" content="Eliza contacts" />
-				<meta name="description" content="Address: Deglava iela 50" />
-				<meta name="description" content="Working days: 11:00 - 18:00" />
-				<meta name="description" content="saturday: 11:00 - 15:00" />
-				<meta name="keywords" content="eliza, eliza-k, contacts, working time, adress" />
-				<meta property="og:title" content="Contacts" key="title" />
-			</Head>
+
 			<div className='row'>
 				<div className='col-12'>
 					<p className='contacts-title'>{t("Pages.contacts.pageTitle")}</p>
