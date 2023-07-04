@@ -1,6 +1,5 @@
 import { useTranslations } from 'next-intl';
 import CollectionFilter from '@/components/CollectionFilter';
-
 export default function Layout({ children }) {
 	const t = useTranslations();
 	const filter = [
