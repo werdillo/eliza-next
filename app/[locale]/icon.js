@@ -1,5 +1,6 @@
 import { ImageResponse } from 'next/server'
 import favicon from "./favicon.ico"
+import Image from 'next/image';
 // Route segment config
 export const runtime = 'edge'
 
@@ -27,7 +28,7 @@ export default function Icon() {
 					color: 'white',
 				}}
 			>
-				<Image src={favicon} />
+				<Image src={favicon} alt=""/>
 			</div>
 		),
 		// ImageResponse options
