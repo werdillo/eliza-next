@@ -22,11 +22,11 @@ export default function Horeca() {
 	const t = useTranslations();
 	return (
 		<>
-			<Helmet>
+			<Head>
 				<title>Horeca</title>
 				<meta name="description" content="horeca" />
 				<meta property="og:title" content="Horeca" key="title" />
-			</Helmet>
+			</Head>
 			<HorecaItem header={t("Pages.horeca.hotel-title")} img={hotel} text={t("Pages.horeca.hotel-text")} />
 			<HorecaItem header={t("Pages.horeca.restaurant-title")} img={restaraunt} text={t("Pages.horeca.restaurant-text")} />
 			<HorecaItem header={t("Pages.horeca.cafe-title")} img={Cafe} text={t("Pages.horeca.cafe-text")} />

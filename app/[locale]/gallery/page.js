@@ -1,6 +1,8 @@
 import './gallery.scss';
 import 'bootstrap/dist/css/bootstrap.css'
 import Image from 'next/image';
+import Head from 'next/head'
+
 
 export default function Gallery() {
 	const images = [
