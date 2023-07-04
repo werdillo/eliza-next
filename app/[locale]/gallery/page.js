@@ -1,8 +1,12 @@
 import './gallery.scss';
 import 'bootstrap/dist/css/bootstrap.css'
 import Image from 'next/image';
-import Head from 'next/head'
 
+export const metadata = {
+	title: 'Gallery',
+	description: 'Eliza-k gallery',
+	keywords: ['Eliza-k', 'eliza', 'gallery'],
+}
 
 export default function Gallery() {
 	const images = [
@@ -24,12 +28,6 @@ export default function Gallery() {
 	];
 	return (
 		<div className="container-fluid textile">
-			<Head>
-				<title>Gallery</title>
-				<meta name="description" content="Eliza-k gallery" />
-       			<meta name="keywords" content="eliza, eliza-k, gallery" />
-				<meta property="og:title" content="Gallery" key="title" />
-			</Head>
 			<div className='row'>
 				{images.map((src, index) => (
 					<div key={index} className='col-6 col-md-4 col-lg-3'>
