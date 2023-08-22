@@ -8,12 +8,12 @@ export default function Layout({ children }) {
 			text: t("Pages.collection.all")
 		},
 		{
-			link: "/collection/basic/matresses",
-			text: t("Pages.collection.mattresses")
-		},
-		{
 			link: "/collection/basic/sofa",
 			text: t("Pages.collection.sofas")
+		},
+		{
+			link: "/collection/basic/mattresses",
+			text: t("Pages.collection.mattresses")
 		},
 	]
   return (

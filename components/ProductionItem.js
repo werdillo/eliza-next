@@ -1,6 +1,7 @@
 "use client"
 import '@/assets/scss/_product-item.scss';
 import 'bootstrap/dist/css/bootstrap.css';
+import Image from 'next/image';
 
 // swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -35,11 +36,11 @@ export default function ProductionItem(props) {
 					modules={[Autoplay, Navigation, Pagination]}
 				>
 					{props.images.map((img, key) => {
-						return (<SwiperSlide key={key}><img  src={img} alt="" className="-slider" /></SwiperSlide>);
+						return (<SwiperSlide key={key}><Image src={img} alt="" className="-slider" placeholder="blur" /></SwiperSlide>);
 					})}				
 				</Swiper>
 				:
-				<img src={props.images[0]} alt="" className="-slider" />
+				<Image src={props.images[0]} alt="" className="-slider" placeholder="blur" />
 			}
 			
 			<div className='container'>

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from 'next-intl/link';
 import '@/assets/scss/_collection.scss';
 
 export default function CollectionFilter({ data }) {
